@@ -15,3 +15,9 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore Simplecov files
+coverage
+
+# Ignore Mac invisible files
+.DS_Store

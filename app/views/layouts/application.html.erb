@@ -5,8 +5,33 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
+
+<nav>
+<%= link_to root_path do %>
+  <%= image_tag ("/assets/logo.png"), :class => "nav-inline", :class => "add-padding" %>
+<% end %>
+  <div class="nav-inline nav-menu">
+    <%= link_to root_path do %>
+      <%= 'Home' %>
+    <% end %>
+    |
+    <%= 'About' %>
+    |
+    <%= 'Review' %>
+    |
+    <%= 'Find Friends' %>
+    |
+    <%= 'News' %>
+    |
+    <%= 'Log In' %>
+  </div>
+  <div class="nav-inline sign-up">
+    <%= 'Sign Up' %>
+  </div>
+</nav>
 
 <%= yield %>
 

@@ -1,9 +1,8 @@
-%h1
-  Add New Product
+%div.indented-text
+  %h1
+    Add New Product
 
-= render partial: 'form', locals: {product: @product, description: @description}
+  = render partial: 'form', locals: {product: @product, description: @description}
 
-%div.button
-  = link_to 'Cancel', products_path
-
-#footer
+  %div.button
+    = link_to 'Cancel', products_path

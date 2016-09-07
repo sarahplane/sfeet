@@ -1,9 +1,8 @@
-%h1
-  = #{@product.name}
+%div.indented-text.add-margin-below
+  %h1
+    = "#{@product.name}"
 
-%h2
-  Description:
-%div
-  = @product.description
-
-#footer
+  %h2
+    Description:
+  %div
+    = @product.description

@@ -1,13 +1,13 @@
-%h1
-  Products Listing
+%div.indented-text
+  %h1
+    Products Listing
 
-%div.button
-= link_to 'Add Product', new_product_path
+  %div.button.add-margin-below
+    = link_to 'Add Product', new_product_path
 
-%ol
-- @products.each do |product|
-  %li
-    = link_to "#{product.name}", product
-    = product.description
-
-#footer
+  %div
+    - @products.each do |product|
+      %div.link
+        = link_to "#{product.name}", product
+      %div.add-margin-below
+        = product.description

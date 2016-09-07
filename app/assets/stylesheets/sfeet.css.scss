@@ -7,3 +7,47 @@ html, body {
 .add-padding {
   padding: 1em;
 }
+
+.add-margin-below {
+  margin-bottom: 2em;
+}
+
+.link {
+
+  a:visited, a:link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &.large-link {
+    margin-top: 3em;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.indented-text {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.button, input[type="submit" i] {
+  color: $off-white;
+  background-color: $green;
+  padding: 0.5em;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+  border: solid 2px $off-black;
+  border-radius: 5px;
+  max-width: 10em;
+
+  a:visited, a:link {
+    color: $off-white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

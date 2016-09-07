@@ -1,0 +1,13 @@
+%h1
+  Products Listing
+
+%div.button
+= link_to 'Add Product', new_product_path
+
+%ol
+- @products.each do |product|
+  %li
+    = link_to "#{product.name}", product
+    = product.description
+
+#footer

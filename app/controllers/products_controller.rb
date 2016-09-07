@@ -1,4 +1,4 @@
-class ProductController < ApplicationController
+class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destory]
 
   def index
@@ -16,11 +16,12 @@ class ProductController < ApplicationController
     @product = Product.new(product_params)
 
     if @product.save
-      flash [:notice] = "Product successfully added."
+      flash[:notice] = "Product successfully added."
       redirect_to products_path
     else
-      flash.now[:alert] = "Item NOT added, please try again."
+      flash.now[:alert] = "Product NOT added, please try again."
       render :new
+    end
   end
 
   def edit

@@ -9,11 +9,11 @@
 </head>
 <body>
 
-<nav>
+<nav class = "navbar navbar-inverse navbar-static-top">
 <%= link_to root_path do %>
-  <%= image_tag ("/assets/logo.png"), :class => "nav-inline", :class => "add-padding" %>
+  <%= image_tag ("/assets/logo.png"), :class => "navbar-left" %>
 <% end %>
-  <div class="nav-inline nav-menu">
+  <div class="navbar-right">
     <%= link_to root_path do %>
       <%= 'Home' %>
     <% end %>
@@ -27,9 +27,9 @@
     <%= 'News' %>
     |
     <%= 'Log In' %>
-  </div>
-  <div class="nav-inline sign-up">
-    <%= 'Sign Up' %>
+    <div class="navbar-btn">
+      <%= 'Sign Up' %>
+    </div>
   </div>
 </nav>
 

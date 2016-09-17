@@ -16,6 +16,14 @@ $nav-accent-color: $off-black;
   }
 }
 
+.navbar {
+  min-height: 100px;
+}
+
 .navbar-inverse {
   background-color: $nav-background-color;
+}
+
+.padding-below {
+  padding-bottom: 2em;
 }

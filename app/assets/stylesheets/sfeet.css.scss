@@ -18,6 +18,8 @@ $nav-accent-color: $off-black;
 
 .navbar {
   min-height: 100px;
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
 .navbar-inverse {
@@ -26,4 +28,16 @@ $nav-accent-color: $off-black;
 
 .padding-below {
   padding-bottom: 2em;
+}
+
+.padding-above {
+  padding-top: 2em;
+}
+
+.gray {
+  background-color: lightgray;
+}
+
+.row-header {
+  min-height: 250px;
 }

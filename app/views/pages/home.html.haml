@@ -5,7 +5,7 @@
         %img{:alt => "...", :src => "..."}/
         .caption
           %h3 Browse Our Products
-          %div.padding-below
+          .padding-below
             Not sure what you are looking for? No problem, browse through
             all our listed products.
           %a.btn.btn-primary{:href => products_path, :role => "products_path"} Browse All Products
@@ -14,18 +14,19 @@
       .thumbnail.thumbnail-thick-boarder
         %img{:alt => "...", :src => "..."}/
         .caption
-          %h3 New To Us?
-          %div.padding-below
+          %h3 New To Sfeet?
+          .padding-below
             Not sure where to start? Check out our About page, FAQ, and other
             useful information thats Sfeet!
-          %a.btn.btn-primary{:href => "#", :role => ""} About
+
+          = link_to "About Sfeet", about_path, class: "btn btn-primary"
 
     .col-sm-6.col-md-4.text-center
       .thumbnail.thumbnail-thick-boarder
         %img{:alt => "...", :src => "..."}/
         .caption
           %h3 Recent News
-          %div.padding-below
+          .padding-below
             Want to stay up to date on the recent news releases about
             products and brands, follow our news blog.
           %a.btn.btn-primary{:href => "#", :role => ""} News Roll

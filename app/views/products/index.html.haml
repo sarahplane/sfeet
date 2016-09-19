@@ -1,13 +1,26 @@
-%div.indented-text
-  %h1
-    Products Listing
+.container-fluid
+  .row.gray.row-header
+    .col-md-10.col-md-offset-1
+      %h1
+        Products Listing
 
-  %div.button.add-margin-below
-    = link_to 'Add Product', new_product_path
+      Categories (linkable), Filters ($ index & product features (GF, GMO etc)) will go here.
 
-  %div
-    - @products.each do |product|
-      %div.link
-        = link_to "#{product.name}", product
-      %div.add-margin-below
-        = product.description
+  .row
+    .col-md-7.col-md-offset-1.padding-above
+      - @products.each do |product|
+        .panel.panel-default
+          .panel-heading
+            .link
+              = link_to "#{product.name}", product
+          .panel-body
+            .add-margin-below
+              = product.description
+
+    .col-md-3.padding-above
+      .thumbnail.thumbnail-thick-boarder
+        .caption
+          %h3 Add a Product
+          Don't see what you are looking for? Add a new product!
+          .padding-below
+          = link_to 'Add Product', new_product_path, class: "btn btn-primary"

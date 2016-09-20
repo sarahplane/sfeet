@@ -28,6 +28,7 @@ class ProductsController < ApplicationController
   end
 
   def update
+    #add a head out so that the forbidden page was shown if someone gets to URL
   end
 
   def destroy

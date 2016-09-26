@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row row-centered padding-above">
-    <h2 class="h2-theme">Resend confirmation instructions</h2>
+    <h2>Resend confirmation instructions</h2>
 
     <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
       <%= devise_error_messages! %>

@@ -12,9 +12,9 @@ $nav-accent-color: $off-black;
 $primary-text: $dark-blue;
 $secondary-text: $green;
 
-.thumbtail{
-  &.thumbnail-thick-boarder {
-    border: 4px solid #ddd;
+.thumbnail{
+  &.thumbnail-no-border {
+    border: none;
   }
 }
 
@@ -110,9 +110,7 @@ $secondary-text: $green;
 }
 
 h2 {
-  &.h2-theme {
-    color: $primary-text;
-  }
+  color: $primary-text;
 }
 
 .inline {

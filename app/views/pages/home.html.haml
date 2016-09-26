@@ -1,32 +1,32 @@
 .container-fluid
   .row
     .col-sm-6.col-md-4.text-center.padding-above
-      .thumbnail.thumbnail-thick-boarder
-        %img{:alt => "...", :src => "..."}/
+      .thumbnail.thumbnail-no-border
+        %img{:alt => "Home Browse", :src => "assets/home_browse"}/
         .caption
-          %h3 Browse Our Products
+          %h2 Browse Our Products
           .padding-below
             Not sure what you are looking for? No problem, browse through
             all our listed products.
-          %a.btn.btn-primary{:href => products_path, :role => "products_path"} Browse All Products
+          = link_to "Browse All Products", products_path, class: "btn btn-primary"
 
     .col-sm-6.col-md-4.text-center.padding-above
-      .thumbnail.thumbnail-thick-boarder
-        %img{:alt => "...", :src => "..."}/
+      .thumbnail.thumbnail-no-border
+        %img{:alt => "Home About", :src => "assets/home_about"}/
+      .thumbnail.thumbnail-no-border
         .caption
-          %h3 New To Sfeet?
+          %h2 New To Sfeet?
           .padding-below
             Not sure where to start? Check out our About page, FAQ, and other
             useful information thats Sfeet!
-
           = link_to "About Sfeet", about_path, class: "btn btn-primary"
 
     .col-sm-6.col-md-4.text-center.padding-above
-      .thumbnail.thumbnail-thick-boarder
-        %img{:alt => "...", :src => "..."}/
+      .thumbnail.thumbnail-no-border
+        %img{:alt => "Home News", :src => "assets/home_news"}/
         .caption
-          %h3 Recent News
+          %h2 Recent News
           .padding-below
             Want to stay up to date on the recent news releases about
             products and brands, follow our news blog.
-          %a.btn.btn-primary{:href => "#", :role => ""} Recent News
+          = link_to "Recent News", news_path, class: "btn btn-primary"

@@ -4,7 +4,6 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
-    price_range
   end
 
   def show
@@ -66,4 +65,5 @@ private
       @price_range = ""
     end
   end
+
 end

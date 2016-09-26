@@ -1,7 +1,7 @@
 .container-fluid
   .row.gray.row-header
     .col-md-10.col-md-offset-1
-      %h1
+      %h2
         Products Listing
 
       Categories (linkable), Filters ($ index & product features (GF, GMO etc)) will go here.
@@ -11,11 +11,26 @@
       - @products.each do |product|
         .panel.panel-default
           .panel-heading
-            .link
+            .h5
               = link_to "#{product.name}", product
           .panel-body
             .add-margin-below
-              = product.price
+              - case product.price
+                - when "1"
+                  = "$"
+                - when "2"
+                  = "$$"
+                - when "3"
+                  = "$$$"
+                - when "4"
+                  = "$$$$"
+                - when "5"
+                  = "$$$$$"
+                - when "6"
+                  = "$$$$$$"
+                - when "7"
+                  = "$$$$$$$"
+  
 
     .col-md-3.padding-above
       .thumbnail.thumbnail-thick-boarder

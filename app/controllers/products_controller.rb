@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :edit, :update, :destory]
+  before_action :set_product, only: [:show, :edit, :update, :destroy]
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
@@ -30,10 +30,22 @@ class ProductsController < ApplicationController
   end
 
   def update
-    #add a head out so that the forbidden page was shown if someone gets to URL
+    if @product.update(product_params)
+      flash[:notice] = "Product Updated"
+      redirect_to product_path(@product)
+    else
+      flash.now[:alert] = "Product NOT updated, please try again."
+      render :edit
+    end
   end
 
   def destroy
+    if @product.destroy
+      flash[:notice] = "Product Deleted"
+    else
+      flash[:alert] = "Product NOT deleted, please try again."
+    end
+    redirect_to products_path
   end
 
 private

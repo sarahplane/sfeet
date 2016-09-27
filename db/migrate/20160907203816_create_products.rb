@@ -4,7 +4,6 @@ class CreateProducts < ActiveRecord::Migration
       t.string :name
       t.text :description
       t.string :price
-        #is string accurate attribute for radio button?
 
       t.timestamps
     end

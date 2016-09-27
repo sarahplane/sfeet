@@ -12,9 +12,9 @@ $nav-accent-color: $off-black;
 $primary-text: $dark-blue;
 $secondary-text: $green;
 
-.thumbtail{
-  &.thumbnail-thick-boarder {
-    border: 4px solid #ddd;
+.thumbnail{
+  &.thumbnail-no-border {
+    border: none;
   }
 }
 
@@ -68,6 +68,10 @@ $secondary-text: $green;
   }
 }
 
+.glyphicon {
+  color: black;
+}
+
 .padding-below {
   padding-bottom: 2em;
 }
@@ -83,6 +87,10 @@ $secondary-text: $green;
 
 .margin-left {
   margin-left: 2em;
+}
+
+.margin-right {
+  margin-right: 2em;
 }
 
 .margin-above {
@@ -109,8 +117,10 @@ $secondary-text: $green;
   text-align: center;
 }
 
-h2 {
-  &.h2-theme {
-    color: $primary-text;
-  }
+h1,h2,h3,h4,h5,h6 {
+  color: $primary-text;
+}
+
+.inline {
+  display: inline-block;
 }

@@ -10,7 +10,8 @@
       .margin-above
         = "#{@price_range}"
         &#xb7;
-        = @product.tag_list
+        - @product.tags.each do |tag|
+          = link_to "#{tag.name.capitalize} |", tag_path(tag)
   .row
     .col-md-7.col-md-offset-1
     .col-md-3.padding-above

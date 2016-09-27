@@ -4,6 +4,8 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
+    @tags = Tag.all
+    @tags_sorted = Tag.order("tags.name asc")
   end
 
   def show
@@ -50,7 +52,7 @@ class ProductsController < ApplicationController
 
 private
   def product_params
-    params.require(:product).permit(:name, :price, :filter)
+    params.require(:product).permit(:name, :price, :tag_list)
   end
 
   def set_product

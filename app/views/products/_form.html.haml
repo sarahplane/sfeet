@@ -2,6 +2,9 @@
   .user-field.margin-below
     = f.text_field :name, placeholder: "Product Name"
 
+  .user-field.margin-below
+    = f.text_field :tag_list, placeholder: "Tags (separated by , )"
+
   .margin-above
     .inline
       = f.radio_button(:price, "1")

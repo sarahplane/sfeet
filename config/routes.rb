@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   end
 
   resources :products
-  resources :tags, only: [:show]
+  resources :tags, only: [:show, :destroy]
 
   root 'pages#home'
 end

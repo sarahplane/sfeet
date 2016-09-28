@@ -110,7 +110,8 @@ $secondary-text: $green;
 }
 
 .row-header {
-  min-height: 250px;
+  min-height: 200px;
+  max-height: 250px;
 }
 
 .row-centered {
@@ -123,4 +124,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .inline {
   display: inline-block;
+}
+
+.col-count-7 {
+  column-count: 7;
+  column-gap: 10px;
+  min-height: 100px;
 }

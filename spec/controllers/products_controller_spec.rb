@@ -11,7 +11,7 @@ RSpec.describe ProductsController, :type => :controller do
     sign_in @user
 
     @product = Product.create(name: "Some Product", price: "3")
-    @tags = Tag.create{['yummy item', 'really yummy item', 'healthy item']}
+    @tags = ['yummy item', 'really yummy item', 'healthy item']
   end
 
   describe "GET #index" do
@@ -61,7 +61,7 @@ RSpec.describe ProductsController, :type => :controller do
 
   describe "DELETE #destroy" do
     it "successfully deletes an product" do
-      put :destroy, :id => @product.id, method: :delete
+      delete :destroy, :id => @product.id, method: :delete
 
       expect(Product.count).to eq 0
     end

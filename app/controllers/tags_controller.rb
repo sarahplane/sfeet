@@ -1,5 +1,6 @@
 class TagsController < ApplicationController
-before_action :set_tag, only: [:show, :destroy]
+  before_action :set_tag, only: [:show, :destroy]
+  skip_before_action :authenticate_user!, only: [:show]
 
   def show
     @tags_sorted = Tag.order("tags.name asc")

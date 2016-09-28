@@ -47,7 +47,7 @@
         1,
         null,
         1,
-        5,
+        6,
         null,
         2,
         null,
@@ -146,6 +146,30 @@
         null,
         null
       ],
+      "/Users/sarahplane/src/sfeet/app/controllers/tags_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/sarahplane/src/sfeet/app/models/product.rb": [
         1,
         1,
@@ -180,32 +204,8 @@
         1,
         1,
         null
-      ],
-      "/Users/sarahplane/src/sfeet/app/controllers/tags_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1475037703
+    "timestamp": 1475039577
   }
 }

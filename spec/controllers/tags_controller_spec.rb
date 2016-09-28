@@ -1,18 +1,20 @@
 require "rails_helper"
 
-RSpec.describe ProductsController, :type => :controller do
+RSpec.describe TagsController, :type => :controller do
 
   before(:each) do
-    @product = Product.create(name: "Some Product", price: "3")
-    @tags = Tag.create{['yummy item', 'really yummy item', 'healthy item']}
-    @tag = Tag.create(name: "Snackaroo")
+    @user = User.create(email: "12345@gmail.com", password: "123456", password_confirmation: "123456")
+    @user.confirm
+    @user.save
+    sign_in @user
   end
 
   describe "DELETE #destroy" do
     it "successfully deletes a tag" do
-      put :destroy, :id => @tag.id, method: :delete
+      @tag = Tag.create(name: "Snackaroo")
+      delete :destroy, :id => @tag.id
 
-      expect(Tag.count).to eq 2
+      expect(Tag.count).to eq(0)
     end
   end
 end
